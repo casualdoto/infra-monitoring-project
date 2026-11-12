@@ -12,7 +12,7 @@
 - [x] Этап 2. Анализ сетевого трафика
 - [x] Этап 3. Bash-скрипты мониторинга и анализа логов
 - [x] Этап 4. Docker Compose: API и Nginx
-- [ ] Этап 5. CI/CD на GitHub Actions
+- [x] Этап 5. CI/CD на GitHub Actions
 - [ ] Этап 6. Документация SSH и SCP
 
 ## Git Workflow
