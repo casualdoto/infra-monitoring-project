@@ -1,0 +1,32 @@
+name: Monitoring CI
+
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  check-scripts:
+    name: Check Bash scripts
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+
+      - name: Check check_api.sh syntax
+        run: bash -n check_api.sh
+
+      - name: Check analyze_logs.sh syntax
+        run: bash -n analyze_logs.sh
+
+      - name: Test API availability
+        run: |
+          ./check_api.sh https://httpbin.org/status/200
+          echo "Проверка API завершилась с кодом 0"
