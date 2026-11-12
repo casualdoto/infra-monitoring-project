@@ -11,7 +11,7 @@
 - [x] Этап 1. Git Workflow и организация проекта (итоговый PR — в конце работы)
 - [x] Этап 2. Анализ сетевого трафика
 - [x] Этап 3. Bash-скрипты мониторинга и анализа логов
-- [ ] Этап 4. Docker Compose: API и Nginx
+- [x] Этап 4. Docker Compose: API и Nginx
 - [ ] Этап 5. CI/CD на GitHub Actions
 - [ ] Этап 6. Документация SSH и SCP
 

@@ -11,7 +11,7 @@
 
 - [x] Скриншот Wireshark с отфильтрованным HTTP-трафиком
 - [x] Вывод работы `analyze_logs.sh` в терминале
-- [ ] Скриншот работающих контейнеров (`docker-compose ps`)
+- [x] Скриншот работающих контейнеров (`docker-compose ps`)
 - [ ] Скриншот успешного CI/CD пайплайна в GitHub
 - [ ] Пример работы `check_api.sh` с валидным и невалидным URL
 
@@ -70,12 +70,12 @@
 
 ### Этап 4. Docker Compose для стека мониторинга
 
-1. [ ] Создайте файл `docker-compose.yml` в корне проекта.
-2. [ ] Опишите два сервиса, используя **готовые образы** из Docker Hub:
-   - [ ] **api:** образ `hashicorp/http-echo` с текстом “Monitoring Service Active” на порту 8080
-   - [ ] **proxy:** образ `nginx:alpine`, который проксирует запросы с порта 80 на порт 8080 сервиса `api`
-3. [ ] Настройте внутреннюю сеть Docker для связи контейнеров.
-4. [ ] Проверьте работу командой `docker-compose up -d` и выполните `curl http://localhost:80` — должен вернуться текст “Monitoring Service Active”.
+1. [x] Создайте файл `docker-compose.yml` в корне проекта.
+2. [x] Опишите два сервиса, используя **готовые образы** из Docker Hub:
+   - [x] **api:** образ `hashicorp/http-echo` с текстом “Monitoring Service Active” на порту 8080
+   - [x] **proxy:** образ `nginx:alpine`, который проксирует запросы с порта 80 на порт 8080 сервиса `api`
+3. [x] Настройте внутреннюю сеть Docker для связи контейнеров.
+4. [x] Проверьте работу командой `docker-compose up -d` и выполните `curl http://localhost:80` — должен вернуться текст “Monitoring Service Active”.
 
 ### Этап 5. CI/CD Pipeline (GitHub Actions)
 
