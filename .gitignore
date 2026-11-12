@@ -1,0 +1,42 @@
+# Logs
+*.log
+logs/
+
+# Temporary files and editor backups
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+tmp/
+temp/
+
+# Build output and dependencies
+build/
+dist/
+out/
+artifacts/
+node_modules/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.aws/
+
+# Local IDE and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Traffic captures (submit separately with the report)
+*.pcap
+*.pcapng
